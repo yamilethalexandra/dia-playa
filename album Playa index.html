@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yami - Álbum Playa</title>
+  <style>
+    * {
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #7fc6ff;
+    }
+
+    .cabecera {
+      background-color: rgb(19, 31, 62);
+      color: rgb(227, 255, 254);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      font-size: 42px;
+      font-weight: bold;
+      height: 100px;
+      position: relative;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .olas-superior {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .olas-superior svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 100px;
+    }
+
+    .olas-superior path {
+      fill: #7fc6ff;
+    }
+
+    .descripcion {
+      background-color: #c2ecff;
+      padding: 60px 30px 80px 30px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.8;
+      color: #043652;
+      position: relative;
+    }
+
+    .olas-inferior {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .olas-inferior svg {
+      display: block;
+      width: 100%;
+      height: 80px;
+    }
+
+    .olas-inferior path {
+      fill: #7fc6ff;
+    }
+
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .foto {
+      background-color: #bce3ff;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .foto:hover {
+      transform: scale(1.05);
+    }
+
+    .foto img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .contenedor {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .prueba {
+      padding: 12px 24px;
+      background-color: #1e3a5f;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .prueba:hover {
+      background-color: #c2ecff;
+      color: #1e3a5f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #043652;
+      color: white;
+    }
+
+    footer a {
+      display: inline-block;
+      background-color: #00aaff;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      background-color: #006688;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cabecera">Álbum Playa</div>
+
+  <!-- Olas superiores -->
+  <div class="olas-superior">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0.00,49.98 C150.00,150.00 349.34,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+    </svg>
+  </div>
+
+  <section class="descripcion">
+    <p>Bienvenido a mi álbum de playa. Aquí comparto fotos que tome en verano.</p>
+
+    <!-- Olas inferiores -->
+    <div class="olas-inferior">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 C150.00,150.00 349.34,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <div class="fotos">
+    <div class="foto">
+      <img src="IMG_20250223_161005_edit_75880965319752~2.jpg" alt="Foto 1 del viaje">
+    </div>
+    <div class="foto">
+      <img src="d61aa1bdfa418354225dd9a604e207bc.jpg" alt="Foto 2 del viaje" />
+    </div>
+    <div class="foto">
+      <img src="IMG_20240622_154657.jpg" alt="Foto 3 del viaje" />
+    </div>
+    <div class="foto">
+      <img src="IMG_20210309_161543.jpg" alt="Foto 4 del viaje" />
+    </div>
+    <div class="foto">
+      <img src="C:\Users\yamil\Documents\html\IMG\IMG_20210309_140547.jpg" alt="Foto 5 del viaje" />
+    </div>
+    <div class="foto">
+      <img src="C:\Users\yamil\Documents\html\IMG\IMG_20210309_144701 (1).jpg" alt="Foto 6 del viaje" />
+    <div class="foto">
+    </div>
+    "<div class="foto">
+      <img src="C:\Users\yamil\Documents\html\IMG\IMG_20210309_160802.jpg" alt="Foto 7 del viaje" /> 
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <a href="https://www.youtube.com/" class="prueba">INICIO</a>
+    <a href="#" class="prueba">CONTACTO</a>
+    <a href="#" class="http://fotoscampo.somee.com/">ÁLBUM Campo</a>
+  </div>
+
+  <footer>
+    <p>Sígueme en mis redes sociales:</p>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a>
+  </footer>
+
+</body>
+</html>
